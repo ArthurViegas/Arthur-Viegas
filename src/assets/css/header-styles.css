@@ -1,0 +1,62 @@
+.header-styles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  color: #f1f1f1;
+  height: 500px;
+  background-color: #1e293b;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+}
+
+.title {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-section {
+  width: 49%;
+}
+
+.nav-section nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.introduction {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.introduction h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.introduction h4 {
+  font-size: 20px;
+  margin: 5px 0;
+  
+}
+
+.introduction nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  margin: 10px 0;
+}
