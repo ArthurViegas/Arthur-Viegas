@@ -1,11 +1,34 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .about-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin: 100px 0;
   width: 60%;
+  height: 400px;
+  color: #94a1b2;
 }
 
 .about-section div {
   width: 49%;
+}
+
+.about-section div div {
+  width: 100%;
+}
+
+.my-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-img {
+  display: flex;
+  justify-content: center;
 }
