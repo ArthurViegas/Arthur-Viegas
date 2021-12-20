@@ -5,15 +5,15 @@ function Header() {
   return (
     <header className="header-styles">
       <section className="header-nav">
-        {/* <div className="title">
-          <h2>Arthur Viegas</h2>
-        </div> */}
         <section className="nav-section">
-          <nav>
-          <p>HOME</p>
-          <p>ABOUT</p>
-          <p>PORTFOLIO</p>
-          <p>CONTACT</p>
+          <nav id="nav-buttons">
+          <a
+            href="#teste"
+          >
+            HOME
+          </a>
+          <a href="a">PORTFOLIO</a>
+          <a href="a">CONTACT</a>
           </nav>
         </section>
       </section>
@@ -23,7 +23,7 @@ function Header() {
           <h4>A front-end web developer</h4>
           <p>on the way to become fullStack!</p>
         </div>
-        <nav>
+        <nav className="social-links">
           <a target="blank" href="https://www.linkedin.com/in/viegasarthur/">L</a>
           <a target="blank" href="https://instagram.com/v_arthur.reis?utm_medium=copy_link">I</a>
           <a target="blank" href="https://github.com/ArthurViegas">G</a>
