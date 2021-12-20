@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  /*background: linear-gradient(90deg, #443554, #503759, #5c385c, #69395e, #763a5f, #823b5e, #8e3c5b, #9a3e57, #a44152);*/
+  background-color: #16161a;
+}

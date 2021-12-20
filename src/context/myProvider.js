@@ -1,12 +1,12 @@
 import React from 'react';
-import myContext from "./myContext";
+import MyContext from "./MyContext";
 
-function myProvider({ children }) {
+function MyProvider({ children }) {
   return (
-    <myContext.Provider value={{}} >
+    <MyContext.Provider value={{}} >
       { children }
-    </myContext.Provider>
+    </MyContext.Provider>
   )
 }
 
-export default myProvider;
+export default MyProvider;
