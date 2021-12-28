@@ -3,12 +3,16 @@ import Header from '../components/Header';
 import profile from '../assets/images/profile.jpeg'
 import '../assets/css/mainPage.css';
 import MyContext from '../context/MyContext';
+import layer1 from '../assets/svg/layer1.svg'
 
 function Main() {
   const { teste } = useContext(MyContext)
   return (
     <>
     <Header />
+    <div className='transition-layer'>
+      <img src={layer1} alt="division" />
+    </div>
     <main>
     <section className="about-section">
       <div className="my-description">

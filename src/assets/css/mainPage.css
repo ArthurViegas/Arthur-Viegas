@@ -2,7 +2,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-color: #16161a;
 }
+
 .about-section {
   display: flex;
   justify-content: center;
@@ -31,4 +34,15 @@ main {
 .my-img {
   display: flex;
   justify-content: center;
+}
+
+.transition-layer {
+  display: flex;
+}
+
+.transition-layer img {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #1e293b;
+  transform-origin: bottom;
 }
