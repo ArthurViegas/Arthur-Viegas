@@ -1,0 +1,10 @@
+.footer-section {
+  color: #94a1b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #1e293b;
+  margin-top: 100px;
+}

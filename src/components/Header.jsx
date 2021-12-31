@@ -10,8 +10,9 @@ function Header() {
           <a
             href="#teste"
           >
-            HOME
+            ABOUT
           </a>
+          <a href="a">SKILLS</a>
           <a href="a">PORTFOLIO</a>
           <a href="a">CONTACT</a>
           </nav>
@@ -19,9 +20,9 @@ function Header() {
       </section>
       <div className="introduction">
         <div>
-          <h1>Arthur Viegas</h1>
-          <h4>A front-end web developer</h4>
-          <p>on the way to become fullStack!</p>
+          <h1>{`<Arthur Viegas/>`}</h1>
+          <h4>A Front-End web developer</h4>
+          <p>on the way to become FullStack!</p>
         </div>
         <nav className="social-links">
           <a target="blank" href="https://www.linkedin.com/in/viegasarthur/">L</a>
