@@ -1,9 +1,8 @@
 import React from 'react';
 import MyContext from "./MyContext";
-const teste = 'oi'
 function MyProvider({ children }) {
   return (
-    <MyContext.Provider value={{ teste }} >
+    <MyContext.Provider>
       { children }
     </MyContext.Provider>
   )
