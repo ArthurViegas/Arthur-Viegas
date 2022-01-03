@@ -1,6 +1,7 @@
 import React from 'react';
 import myPortfolio from '../assets/files/myPortfolio.pdf';
 import profile from '../assets/images/profile.jpeg';
+import '../assets/css/about.css';
 
 function About() {
   return (
