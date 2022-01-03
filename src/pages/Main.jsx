@@ -6,14 +6,6 @@ import About from '../components/About';
 import Footer from '../components/Footer';
 import Skills from '../components/Skills';
 
-const hardSkills = [
-  'HTML',
-  'CSS',
-  'JAVA-SCRIPT',
-  'REACT',
-  'BOOTSTRAP',
-]
-
 function Main() {
   return (
     <>
@@ -22,8 +14,11 @@ function Main() {
       <img src={layer1} alt="division" />
     </div>
     <main>
-    <About />
-    <Skills />
+      <About />
+      <Skills />
+      <div>
+
+      </div>
     </main>
     <Footer />
     </>
