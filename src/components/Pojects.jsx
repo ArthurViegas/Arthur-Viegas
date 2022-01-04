@@ -13,7 +13,7 @@ function Projects() {
             <a
               href={project.url}
               target={'_blank'}
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <img src={project.img} alt={project.name} />
             </a>
