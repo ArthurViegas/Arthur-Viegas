@@ -80,7 +80,7 @@
 
 .introduction h1 {
   font-size: 40px;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .introduction h4 {
@@ -89,10 +89,19 @@
   
 }
 
+.introduction div {
+  margin: 20px 0;
+}
+
 .introduction nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 20%;
+  width: 40%;
   margin: 10px 0;
+}
+
+.line-division {
+  width: 80%;
+  border-top: 1px solid #bbb;
 }

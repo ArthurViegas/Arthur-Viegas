@@ -8,16 +8,17 @@ function Header() {
         <section className="nav-section">
           <nav id="nav-buttons">
           <a
-            href="#teste"
+            href="#about"
           >
-            ABOUT
+            ABOUT ME
           </a>
-          <a href="a">SKILLS</a>
-          <a href="a">PORTFOLIO</a>
+          <a href="#skills-section">SKILLS</a>
+          <a href="#projects">PORTFOLIO</a>
           <a href="a">CONTACT</a>
           </nav>
         </section>
       </section>
+      <hr className="line-division" />
       <div className="introduction">
         <div>
           <h1>{`<Arthur Viegas/>`}</h1>

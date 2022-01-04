@@ -4,6 +4,8 @@ import '../assets/css/mainPage.css';
 import layer1 from '../assets/svg/layer1.svg'
 import About from '../components/About';
 import Footer from '../components/Footer';
+import Skills from '../components/Skills';
+import Projects from '../components/Pojects';
 
 function Main() {
   return (
@@ -13,7 +15,9 @@ function Main() {
       <img src={layer1} alt="division" />
     </div>
     <main>
-    <About />
+      <About />
+      <Skills />
+      <Projects />
     </main>
     <Footer />
     </>
