@@ -5,6 +5,7 @@ import layer1 from '../assets/svg/layer1.svg'
 import About from '../components/About';
 import Footer from '../components/Footer';
 import Skills from '../components/Skills';
+import Projects from '../components/Pojects';
 
 function Main() {
   return (
@@ -16,9 +17,7 @@ function Main() {
     <main>
       <About />
       <Skills />
-      <div>
-
-      </div>
+      <Projects />
     </main>
     <Footer />
     </>

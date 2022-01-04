@@ -2,18 +2,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px 0;
-  width: 60%;
+  flex-direction: column;
+  margin: 80px 0;
+  width: 65%;
   height: 400px;
   color: #94a1b2;
-}
-
-.about-section div {
-  width: 49%;
+  /* padding: 0 20px; */
 }
 
 .about-section div div {
+  width: 49%;
+}
+
+.about-section div div div{
   width: 100%;
+}
+
+.about-section h2 {
+  margin-bottom: 50px;
+  color: #d4d4d4;
+  font-size: 50px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  border-left: 2px solid #2cb67d;
+  padding: 0 20px;
+  border-radius: 5px;
 }
 
 .my-description {

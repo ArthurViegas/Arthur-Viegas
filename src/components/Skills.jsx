@@ -1,47 +1,30 @@
 import React, { useContext, useState } from 'react';
 import '../assets/css/skills.css';
 import MyContext from '../context/MyContext';
+import hardSkills from '../helpers/hardSkills';
 
-
-const hardSkills = [
-  {
-    id: 0,
-    name:'HTML',
-    description: 'teste HTML'
-  },
-  {
-    id: 1,
-    name:'CSS',
-    description: 'teste CSS'
-  },
-  {
-    id: 2,
-    name:'JAVA-SCRIPT',
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis hendrerit efficitur. Donec nec ante leo. In porta eleifend neque sed feugiat. Mauris eget lacus sed quam maximus dictum eu nec mauris. Quisque maximus massa in nulla sagittis tincidunt. Sed aliquam arcu arcu, ac hendrerit metus accumsan a. Nulla rhoncus congue nulla eu vehicula. Etiam ullamcorper congue nisi sed gravida."
-  },
-  {
-    id: 3,
-    name:'REACT',
-    description: 'teste REACT'
-  },
-  {
-    id: 4,
-    name:'BOOTSTRAP',
-    description: 'teste BOOTSTRAP'
-  },
-]
-
-function verifySelect(setIsSelect, id, selectId, setSelectId) {
-  console.log(id, 'actual');
-  console.log(selectId, 'state');
+function verifySelect(setIsSelect, id, selectId, setSelectId, idName) {
+  removeColors()
+  const skill = document.getElementById(idName)
+  skill.style.backgroundColor = '#815cf02d';
+  skill.style.color = 'white';
    if(id === selectId) {
-     console.log('comparei');
     setIsSelect(false)
     setSelectId('')
+    removeColors()
+
   }
   if (id !== selectId) {
     setIsSelect(true)
   }
+}
+
+function removeColors() {
+  const skills = document.querySelectorAll('.mySkill')
+  for ( let i = 0; i < skills.length; i++) {
+    skills[i].style.backgroundColor = ""
+    skills[i].style.color = ""
+};
 }
 
 function Skills() {
@@ -56,10 +39,12 @@ function Skills() {
         <ul>
           {hardSkills.map((skill) => (
           <li
+            className="mySkill"
             key={skill.id}
+            id={skill.name}
             onClick={() => {
               setSelectId(skill.id)
-              verifySelect(setIsSelect, skill.id, selectId, setSelectId)
+              verifySelect(setIsSelect, skill.id, selectId, setSelectId, skill.name)
               setSkill(skill)
               console.log(isSelect)
             }}

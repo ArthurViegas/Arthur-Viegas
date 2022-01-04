@@ -8,12 +8,12 @@ function Header() {
         <section className="nav-section">
           <nav id="nav-buttons">
           <a
-            href="#teste"
+            href="#about"
           >
-            ABOUT
+            ABOUT ME
           </a>
           <a href="#skills-section">SKILLS</a>
-          <a href="a">PORTFOLIO</a>
+          <a href="#projects">PORTFOLIO</a>
           <a href="a">CONTACT</a>
           </nav>
         </section>

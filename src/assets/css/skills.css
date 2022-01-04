@@ -6,9 +6,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  padding-top: 50px;
 }
 
 #skills-section h2 {
+  color: #d4d4d4;
   font-size: 50px;
 }
 
@@ -16,7 +18,7 @@
   display: flex;
   align-items: center;
   border-bottom: 2px solid #7f5af0;
-  background-color: rgb(34, 34, 34);
+  background-color: #222222;
   border-radius: 5px;
   margin-top: 70px ;
   width: 80%;
@@ -33,27 +35,31 @@
 .hard-skills ul li{
   display: block;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 10px 18px;
   transition: 0.2s;
   border-radius: 5px;
+  border: 2px solid transparent;
 }
 
 .hard-skills ul li:hover {
   cursor: pointer;
-  background-color: #7f5af0;
+  border: 2px solid #7f5af0;
+  background-color: #815cf02d;
   color: white;
 }
 
 .skills-description {
-  margin-top: 50px;
-  width: 40%;
+  margin: 50px 0;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
 }
 
 .skills-description h3 {
-  font-size: 25px;
+  color: #b4b4b4;
+  font-size: 20px;
 }
 
 .skill-board {
@@ -63,16 +69,21 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding: 15px 10px;
+  padding: 15px 40px;
   width: 100%;
+  height: 200px;
+  border-left: 2px solid #2cb67d;
+  background-color: #22222267;
+  border-radius: 5px;
 }
 
 .skill-board h3 {
-  /* display: flex; */
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .skill-board p {
   font-size: 20px;
+  margin-bottom: 20px;
+  text-align: left;
 }
