@@ -27,7 +27,7 @@ function About() {
     <section class="download-section">
       <div className="download-div">
         <p>Check out my:</p>
-        <a className="download-button" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/viegasarthur/" download="myPortfolio.pdf"> LINKEDIN </a>
+        <a className="download-button" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/viegasarthur/" download="myPortfolio.pdf"> LINKEDIN </a>
       </div>
     </section>
     </>

@@ -18,13 +18,13 @@ function Contact() {
       <div>
         <h3>Social medias:</h3>
         <nav>
-          <a href="https://www.linkedin.com/in/viegasarthur/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/viegasarthur/" target="_blank" rel="noopener noreferrer">
             <img src={linkedin} alt="" />
           </a>
-          <a href="https://github.com/ArthurViegas" target="_blank" rel="noreferrer">
+          <a href="https://github.com/ArthurViegas" target="_blank" rel="noopener noreferrer">
             <img src={github} alt="" />
           </a> 
-          <a href="https://instagram.com/v_arthur.reis?utm_medium=copy_link" target="_blank" rel="noreferrer">
+          <a href="https://instagram.com/v_arthur.reis?utm_medium=copy_link" target="_blank" rel="noopener noreferrer">
             <img src={instagram} alt="" />
           </a>
         </nav>
