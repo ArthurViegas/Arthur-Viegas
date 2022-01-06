@@ -6,6 +6,8 @@ import About from '../components/About';
 import Footer from '../components/Footer';
 import Skills from '../components/Skills';
 import Projects from '../components/Pojects';
+import UpButton from '../components/UpButton';
+import Contact from '../components/Contact';
 
 function Main() {
   return (
@@ -18,7 +20,9 @@ function Main() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </main>
+    <UpButton />
     <Footer />
     </>
   );
