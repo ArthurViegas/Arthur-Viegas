@@ -3,7 +3,7 @@ import '../assets/css/header-styles.css';
 
 function Header() {
   return (
-    <header className="header-styles">
+    <header className="header-styles" id="header">
       <section className="header-nav">
         <section className="nav-section">
           <nav id="nav-buttons">
@@ -14,7 +14,7 @@ function Header() {
           </a>
           <a href="#skills-section">SKILLS</a>
           <a href="#projects">PORTFOLIO</a>
-          <a href="a">CONTACT</a>
+          <a href="#contact">CONTACT</a>
           </nav>
         </section>
       </section>

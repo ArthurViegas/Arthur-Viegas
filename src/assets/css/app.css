@@ -4,7 +4,13 @@
   box-sizing: border-box; 
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+}
+
+
 body {
-  /*background: linear-gradient(90deg, #443554, #503759, #5c385c, #69395e, #763a5f, #823b5e, #8e3c5b, #9a3e57, #a44152);*/
+  font-family: Montserrat, sans-serif;
   background-color: #16161a;
 }
