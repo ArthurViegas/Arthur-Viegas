@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../assets/css/projects.css';
+import MyContext from '../context/MyContext';
 import projects from '../helpers/projects';
 
 function Projects() {
+  const { tranlate } = useContext(MyContext)
   return (
     <section className="projects-section" id="projects">
-      <h2>My Projects</h2>
+      <h2>{tranlate ? 'Meus projetos' : 'My Projects'}</h2>
       <div className="card-container">
         {projects.map((project) => (
           <div className="proj-card">

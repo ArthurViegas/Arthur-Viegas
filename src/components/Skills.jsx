@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import '../assets/css/skills.css';
 import MyContext from '../context/MyContext';
-import hardSkills from '../helpers/hardSkills';
+import { hardSkills, hardSkillsPortuguese } from '../helpers/hardSkills';
 
 function verifySelect(setIsSelect, id, selectId, setSelectId, idName) {
   removeColors()
@@ -30,14 +30,15 @@ function removeColors() {
 function Skills() {
   const [isSelect, setIsSelect] = useState(false)
   const [selectId, setSelectId] = useState()
-  const {skill, setSkill} = useContext(MyContext)
+  const {skill, setSkill, translate} = useContext(MyContext)
+  const setLanguage = () => translate ? hardSkillsPortuguese : hardSkills;
   return (
     <>
     <section id="skills-section">
-      <h2> Languages & Skills </h2>
+      <h2> {translate ? 'Linguagens & Habilidades' : 'Languages & Skills'} </h2>
       <div className="hard-skills">
         <ul>
-          {hardSkills.map((skill) => (
+          {setLanguage().map((skill) => (
           <li
             className="mySkill"
             key={skill.id}
@@ -53,7 +54,7 @@ function Skills() {
         </ul>
       </div>
       <div className="skills-description">
-        <h3>Try select one skill above!</h3>
+        <h3>{translate ? 'Experimente selecionar uma habilidade!' : 'Try select one skill above!'}</h3>
         {isSelect && (
           <div className="skill-board">
           <h3>{skill.name}</h3>
