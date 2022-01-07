@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../assets/css/contact.css';
 import linkedin from '../assets/files/linkedin.png';
 import instagram from '../assets/files/instagram.png';
 import github from '../assets/files/github.png';
 import devGif from '../assets/files/devGif.gif';
+import MyContext from '../context/MyContext';
 
 function Contact() {
+  const { tranlate } = useContext(MyContext)
+
   return (
   <div id="contact" className="contact-section">
     <section className="contact-container">
       <div className="contact-infos">
-        <h3>Contact:</h3>
+        <h3>{tranlate ? 'Contato:' : 'Contact:'}</h3>
         <p><span>Email:</span> viegas.wmv@gmail.com</p>
-        <p><span>Number:</span> (5551) 99139-3644</p>
+        <p><span>{tranlate ? 'Número:' : 'Number:'}:</span> (5551) 99139-3644</p>
         <p>Canoas-RS, Brazil</p>
       </div>
       <div>
-        <h3>Social medias:</h3>
+        <h3>{tranlate ? 'Redes sociais' : 'Social medias:'}</h3>
         <nav>
           <a href="https://www.linkedin.com/in/viegasarthur/" target="_blank" rel="noopener noreferrer">
             <img src={linkedin} alt="" />

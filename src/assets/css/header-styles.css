@@ -45,12 +45,31 @@
   border-radius: 5px;
   transition: 0.3s;
   font-weight: 500;
+  font-size: 17px;
 }
 
 .header-nav a:hover {
   background-color: hsla(255, 83%, 65%, 0.178);
   color: #ffffff;
   text-decoration: underline;
+}
+
+.header-nav button {
+  text-decoration: none;
+  color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: 500;
+  border: 2px solid #2cb67d;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.header-nav button:hover {
+  cursor: pointer;
+  background-color: #2cb67d;
 }
 
 .title {
@@ -104,4 +123,26 @@
 .line-division {
   width: 80%;
   border-top: 1px solid #bbb;
+}
+
+@media only screen and ( max-width : 376px) {
+  .header-styles {
+    padding-top: 20px;
+    height: 200px;
+  }
+
+  .first-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-introduction h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .line-division {
+    margin-top: 20px;
+  }
 }
