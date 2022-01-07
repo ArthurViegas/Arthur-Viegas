@@ -107,7 +107,7 @@ function Header() {
   useEffect(() => {
     mobileHeader(setIsMobile)
     console.log(isMobile);
-  }, [setIsMobile])
+  }, [setIsMobile,isMobile])
   return (
     <>
       {isMobile ? mobHeader(hasDropMenu, setHasDropMenu) : pcHeader(translate, setTranslate)}
