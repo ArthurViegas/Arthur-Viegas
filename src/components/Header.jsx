@@ -1,19 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import '../assets/css/header-styles.css';
 import MyContext from '../context/MyContext';
 import blacklinkedin from '../assets/images/blacklinkedin.png'
 import blackinstagram from '../assets/images/blackinstagram.png'
 import blackgithub from '../assets/images/blackgithub.png'
-
-function mobileHeader(setIsMobile) {
-  const width = window.screen.width;
-  if (width <= 375) {
-    setIsMobile(true)
-  }
-  if (width > 375) {
-    setIsMobile(false)
-  }
-}
 
 function pcHeader(translate, setTranslate) {
   return (
@@ -109,14 +99,10 @@ function mobHeader(drop, setDrop) {
   )
 }
 function Header() {
-  const [isMobile, setIsMobile] = useState(false)
+  const isMobile = false;
   const [hasDropMenu, setHasDropMenu] = useState(false)
   const { translate, setTranslate } = useContext(MyContext)
 
-  // useEffect(() => {
-  //   mobileHeader(setIsMobile)
-  //   console.log(isMobile);
-  // }, [setIsMobile,isMobile])
   return (
     <>
       {isMobile ? mobHeader(hasDropMenu, setHasDropMenu) : pcHeader(translate, setTranslate)}
