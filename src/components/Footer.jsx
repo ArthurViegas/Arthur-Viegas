@@ -4,7 +4,7 @@ import '../assets/css/footer.css';
 function Footer() {
   return (
   <footer className="footer-section">
-    <h2>Developed by Arthur</h2>
+    <h2>Developed by Arthur Viegas</h2>
   </footer>
   )
 }
