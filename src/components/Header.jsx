@@ -1,16 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import '../assets/css/header-styles.css';
 import MyContext from '../context/MyContext';
-
-function mobileHeader(setIsMobile) {
-  const width = window.screen.width;
-  if (width <= 375) {
-    setIsMobile(true)
-  }
-  if (width > 375) {
-    setIsMobile(false)
-  }
-}
+import blacklinkedin from '../assets/images/blacklinkedin.png'
+import blackinstagram from '../assets/images/blackinstagram.png'
+import blackgithub from '../assets/images/blackgithub.png'
 
 function pcHeader(translate, setTranslate) {
   return (
@@ -18,21 +11,21 @@ function pcHeader(translate, setTranslate) {
       <section className="header-nav">
         <section className="nav-section">
           <nav id="nav-buttons">
-          <a
-            href="#about"
-          >
-            {translate ? 'SOBRE MIM' : 'ABOUT ME'}
-          </a>
-          <a href="#skills-section">
-          {translate ? 'HABILIDADES' : 'SKILLS'}
-          </a>
-          <a href="#projects">PORTFOLIO</a>
-          <a href="#contact">
-            {translate ? 'CONTATO' : 'CONTACT'}
-          </a>
-          <button
-            onClick={() => setTranslate(!translate)}
-            type="button">Traduzir</button>
+            <a
+              href="#about"
+            >
+              {translate ? 'SOBRE' : 'ABOUT'}
+            </a>
+            <a href="#skills-section">
+            {translate ? 'HABILIDADES' : 'SKILLS'}
+            </a>
+            <a href="#projects">PORTFOLIO</a>
+            <a href="#contact">
+              {translate ? 'CONTATO' : 'CONTACT'}
+            </a>
+            <button
+              onClick={() => setTranslate(!translate)}
+              type="button">Traduzir</button>
           </nav>
         </section>
       </section>
@@ -44,9 +37,15 @@ function pcHeader(translate, setTranslate) {
           <p>{translate ? 'a caminho de me tornar FullStack' : 'on the way to become FullStack!'}</p>
         </div>
         <nav className="social-links">
-          <a target="blank" href="https://www.linkedin.com/in/viegasarthur/">L</a>
-          <a target="blank" href="https://instagram.com/v_arthur.reis?utm_medium=copy_link">I</a>
-          <a target="blank" href="https://github.com/ArthurViegas">G</a>
+          <a target="blank" href="https://www.linkedin.com/in/viegasarthur/">
+          <img alt="linkedin button" src={blacklinkedin}/>
+          </a>
+          <a target="blank" href="https://instagram.com/v_arthur.reis?utm_medium=copy_link">
+            <img alt="instagram button" src={blackinstagram} />
+          </a>
+          <a target="blank" href="https://github.com/ArthurViegas">
+            <img alt="github button" src={blackgithub} />
+          </a>
         </nav>
       </div>
     </header>
@@ -100,14 +99,10 @@ function mobHeader(drop, setDrop) {
   )
 }
 function Header() {
-  const [isMobile, setIsMobile] = useState(false)
+  const isMobile = false;
   const [hasDropMenu, setHasDropMenu] = useState(false)
   const { translate, setTranslate } = useContext(MyContext)
 
-  useEffect(() => {
-    mobileHeader(setIsMobile)
-    console.log(isMobile);
-  }, [setIsMobile,isMobile])
   return (
     <>
       {isMobile ? mobHeader(hasDropMenu, setHasDropMenu) : pcHeader(translate, setTranslate)}

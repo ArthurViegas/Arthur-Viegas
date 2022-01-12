@@ -4,7 +4,6 @@
   margin-top: 100px;
   align-items: center;
   width: 100%;
-  /* background-color: blue; */
   height: 200px;
 }
 .contact-container span {
@@ -57,4 +56,36 @@
 .gif img {
   border-radius: 50% 20% 40% 30% / 30% 30% 70% 50%;
   box-shadow: 2px 5px 15px 1px rgb(44, 182, 125, 0.5);
+}
+
+@media only screen and (max-width : 850px) {
+  .contact-container h3 {
+    font-size: 18px;
+  }
+
+  .contact-container p {
+    font-size: 12px;
+  }
+
+  .gif {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width : 376px) {
+
+  .contact-section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-section section  {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .contact-container div {
+    justify-content: center;
+    align-items: center;
+  }
 }

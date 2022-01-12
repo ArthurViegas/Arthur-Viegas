@@ -59,7 +59,7 @@ function Skills() {
           <div className="skill-board">
           <h3>{skill.name}</h3>
           <p>{skill.description}</p>
-        </div>
+          </div>
         )}
       </div>
 

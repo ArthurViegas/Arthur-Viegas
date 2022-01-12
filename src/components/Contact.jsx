@@ -15,7 +15,7 @@ function Contact() {
       <div className="contact-infos">
         <h3>{tranlate ? 'Contato:' : 'Contact:'}</h3>
         <p><span>Email:</span> viegas.wmv@gmail.com</p>
-        <p><span>{tranlate ? 'Número:' : 'Number:'}:</span> (5551) 99139-3644</p>
+        <p><span>{tranlate ? 'Número:' : 'Number:'}</span> (5551) 99139-3644</p>
         <p>Canoas-RS, Brazil</p>
       </div>
       <div>
