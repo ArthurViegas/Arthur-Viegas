@@ -19,8 +19,7 @@
 
 .contact-container img {
   height: 40px;
-  margin-left: 5px;
-  margin-top: 5px;
+  margin: 5px 10px;
 }
 
 .contact-container nav {
@@ -72,8 +71,7 @@
   }
 }
 
-@media only screen and (max-width : 376px) {
-
+@media only screen and (max-width : 570px) {
   .contact-section {
     flex-direction: column-reverse;
     justify-content: center;
@@ -87,5 +85,42 @@
   .contact-container div {
     justify-content: center;
     align-items: center;
+  }
+
+  .contact-container img {
+    height: 35px;
+    margin: 5px 10px ;
+  }
+
+}
+
+@media only screen and (max-width : 376px) {
+
+  .contact-section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects-section {
+    margin: 70px 0;
+  }
+
+  .contact-section section  {
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .contact-container div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gif-container {
+    margin-bottom: 20px;
+  }
+
+  .gif {
+    height: 120px;
   }
 }

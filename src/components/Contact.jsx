@@ -18,7 +18,7 @@ function Contact() {
         <p><span>{tranlate ? 'Número:' : 'Number:'}</span> (5551) 99139-3644</p>
         <p>Canoas-RS, Brazil</p>
       </div>
-      <div>
+      <div className="social-media-links">
         <h3>{tranlate ? 'Redes sociais' : 'Social medias:'}</h3>
         <nav>
           <a href="https://www.linkedin.com/in/viegasarthur/" target="_blank" rel="noopener noreferrer">

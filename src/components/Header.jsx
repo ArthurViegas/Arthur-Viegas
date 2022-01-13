@@ -5,6 +5,16 @@ import blacklinkedin from '../assets/images/blacklinkedin.png'
 import blackinstagram from '../assets/images/blackinstagram.png'
 import blackgithub from '../assets/images/blackgithub.png'
 
+// function mobileHeader(setIsMobile) {
+//   const width = window.screen.width;
+//   if (width <= 375) {
+//     setIsMobile(true)
+//   }
+//   if (width > 375) {
+//     setIsMobile(false)
+//   }
+// }
+
 function pcHeader(translate, setTranslate) {
   return (
     <header className="header-styles" id="header">
@@ -32,7 +42,7 @@ function pcHeader(translate, setTranslate) {
       <hr className="line-division" />
       <div className="introduction">
         <div>
-          <h1>{`<Arthur Viegas/>`}</h1>
+          <h2>{`<Arthur Viegas/>`}</h2>
           <h4>{translate ? 'Desenvolvedor web Front-End' : 'A Front-End web developer'}</h4>
           <p>{translate ? 'a caminho de me tornar FullStack' : 'on the way to become FullStack!'}</p>
         </div>
@@ -71,7 +81,7 @@ function mobHeader(drop, setDrop) {
   return (
     <header className="header-styles" id="header">
         <section className="top-section">
-          <h1>{`<Arthur Viegas/>`}</h1>
+          <h2>{`<Arthur Viegas/>`}</h2>
           {drop ? dropMenu(drop, setDrop) : (
             <button
               type="button"
@@ -100,9 +110,14 @@ function mobHeader(drop, setDrop) {
 }
 function Header() {
   const isMobile = false;
+  // const [isMobile, setIsMobile] = useState(false)
   const [hasDropMenu, setHasDropMenu] = useState(false)
   const { translate, setTranslate } = useContext(MyContext)
 
+  // useEffect(() => {
+  //   mobileHeader(setIsMobile)
+  //   console.log(isMobile);
+  // }, [setIsMobile,isMobile])
   return (
     <>
       {isMobile ? mobHeader(hasDropMenu, setHasDropMenu) : pcHeader(translate, setTranslate)}

@@ -88,16 +88,82 @@
   text-align: left;
 }
 
-@media only screen and (max-width : 850px) {
+@media only screen and (max-width : 900px) {
   
   .hard-skills {
     height: 80px;
   }
+
   .hard-skills ul li {
     padding: 6px 10px;
     font-size: 15px;
   }
+
+  .skills-description h3 {
+    font-size: 22px;
+  }
+
+  .skill-board {
+    padding: 15px 10px;
+  }
+
+  .skill-board p {
+    font-size: 16px;
+  }
 }
+
+@media only screen and (max-width : 700px) {
+
+  .skills-description {
+    width: 90%;
+  }
+
+  .skill-board {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width : 570px) {
+
+  #skills-section h2 {
+    font-size: 35px;
+  }
+
+  .hard-skills {
+    margin-top: 50px;
+    width: 90%;
+    height: 50px;
+  }
+
+  .hard-skills ul li{
+    font-size: 12px;
+    padding: 3px 5px;
+  }
+
+  .skills-description h3 {
+    font-size: 22px;
+  }
+
+  .skill-board {
+    padding: 15px 10px;
+    height: 250px;
+  }
+
+  .skill-board p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .skill-board {
+    padding: 15px 10px;
+    height: 270px;
+  }
+
+  .skill-board p {
+    font-size: 16px;
+  }
+} 
 
 @media only screen and (max-width : 376px) {
   
