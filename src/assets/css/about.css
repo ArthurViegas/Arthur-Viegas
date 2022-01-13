@@ -138,7 +138,77 @@
   }
 }
 
-@media only screen and (max-width : 376px) {
+
+@media only screen and (max-width : 700px) {
+  .about-section {
+    margin-top: 150px;
+    width: 90%;
+  }
+
+  .about-section div div {
+    width: 90%;
+    height: 250px;
+  } 
+
+  .about-section h2 {
+    font-size: 35px;
+  }
+
+  .my-description div p {
+    font-size: 17px;
+  }
+
+  .my-img img {
+    height: 200px;
+  }
+
+  .download-div p {
+    font-size: 15px;
+    margin: 0 0;
+  }
+
+  .download-button {
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width : 500px) {
+  
+  .about-section {
+    margin-top: 70px;
+  }
+
+  .about-container {
+    height: 300px;
+  }
+
+  .my-img img {
+    height: 170px;
+    margin-top: 80px ;
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  
+  .about-container {
+    height: 350px;
+  }
+
+  .my-img img {
+    height: 150px;
+    margin-top: 120px ;
+  }
+}
+
+@media only screen and (max-width : 380px) {
+  
+  .about-container {
+    height: 200px;
+    margin-bottom: 100px;
+  }
+
   .about-section {
     margin: 70px 0;
     width: 90%;
@@ -158,7 +228,7 @@
 
   .my-img img {
     height: 100px;
-    margin: 30px 0;
+    margin: 10px 0;
   }
 
   .download-div p {
