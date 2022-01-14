@@ -54,7 +54,7 @@ function Skills() {
         </ul>
       </div>
       <div className="skills-description">
-        <h3>{translate ? 'Experimente selecionar uma habilidade!' : 'Try select one skill above!'}</h3>
+        <h3>{translate ? 'Experimente selecionar uma habilidade!' : 'Try selecting one skill above!'}</h3>
         {isSelect && (
           <div className="skill-board">
           <h3>{skill.name}</h3>
