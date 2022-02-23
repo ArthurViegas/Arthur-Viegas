@@ -42,9 +42,8 @@ function pcHeader(translate, setTranslate) {
       <hr className="line-division" />
       <div className="introduction">
         <div>
-          <h2>{`<Arthur Viegas/>`}</h2>
-          <h4>{translate ? 'Desenvolvedor web Front-End' : 'A Front-End web developer'}</h4>
-          <p>{translate ? 'a caminho de me tornar FullStack' : 'on the way to become FullStack!'}</p>
+          <h2>{`<Arthur Viegas />`}</h2>
+          <h4>{translate ? 'Desenvolvedor web full-stack' : 'A full-stack web engineer'}</h4>
         </div>
         <nav className="social-links">
           <a target="blank" href="https://www.linkedin.com/in/viegasarthur/">

@@ -12,6 +12,7 @@
 #skills-section h2 {
   color: #d4d4d4;
   font-size: 50px;
+  text-align: center;
 }
 
 .hard-skills {
@@ -114,6 +115,9 @@
 
 @media only screen and (max-width : 700px) {
 
+  /* #skills-section h2 {
+
+  } */
   .skills-description {
     width: 90%;
   }

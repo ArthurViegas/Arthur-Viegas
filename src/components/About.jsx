@@ -8,11 +8,10 @@ function english() {
     <div>
       <h3>Hi there! Call me Arthur!</h3>
       <p>I'm from south of Brazil, state of Rio Grande do Sul.</p> <br />
-      <p>I've been studying front-End web development for almost a year already 
-        and now I feel ready to start new 
-        challenges by entering the market as a Júnior Front-End web Developer</p> <br />
-      <p>I'm currently working myself to become a fullstack web engineer,
-        so my next step is learning the Back-End side, developing Databases and APIs.</p>
+      <p>I've been studying web development for almost a year already 
+        and now I feel ready to start new challenges by entering the market as a Júnior full-stack web Developer</p> <br />
+      <p>I'm working myself to become a fullstack web engineer,
+      currently I'm learning the Back-End side, developing databases with MySql and Mongodb, REST API's with Node.js Express.</p>
     </div>
   )
 }
@@ -23,10 +22,9 @@ function portuguese() {
     <div>
       <h3>Olá! Me chamo Arthur!</h3>
       <p>Sou do Rio grande do Sul, Brasil.</p> <br />
-      <p>Venho estudando desenvolvimento web Front-end há quase um ano
-        e agora me sinto pronto para encarar novos desafios ao entrar no mercado como desenvolvedor Front-end júnior.</p> <br />
-      <p>Atualmente estou trabalhando para me tornar um engenheiro Full-stack,
-        portanto, meu próximo passo é aprender o lado do Back-end, desenvolvendo bancos de dados e APIs.</p>
+      <p>Venho estudando desenvolvimento web há cerca de um ano
+        e agora me sinto pronto para encarar novos desafios ao entrar no mercado como desenvolvedor full-stack júnior.</p> <br />
+      <p>Atualmente venho trabalhando para me tornar um engenheiro Full-stack, aprendendo o lado do back-end, desenvolvendo bancos de dados com MySql e Mongodb, e desenvolvendo REST API's com Node.js Express.</p>
     </div>
   )
 }

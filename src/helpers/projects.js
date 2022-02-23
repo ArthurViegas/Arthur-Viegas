@@ -8,6 +8,7 @@ const projects = [
     url:'https://try-wallet.vercel.app/',
     img:trywallet,
     name: 'TryWallet:',
+    isMobile: false,
     features:['React', 'React Router', 'Redux'],
   },
   {
@@ -15,6 +16,7 @@ const projects = [
     url:'https://online-store-umber.vercel.app/',
     img:onlineStore,
     name: 'Online Store:',
+    isMobile: false,
     features:['React', 'React Router', 'Redux'],
   },
   {
@@ -22,6 +24,7 @@ const projects = [
     url:'https://app-de-receitas-sage.vercel.app/',
     img:appDeReceitas,
     name: 'App de Receitas:',
+    isMobile: true,
     features:['React', 'React Router', 'Redux'],
   }
 ]
