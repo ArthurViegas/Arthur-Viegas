@@ -19,6 +19,7 @@ function Projects() {
             >
               <img src={project.img} alt={project.name} />
             </a>
+            <p>{project.isMobile && 'Port Mobile'}</p>
           </div>
           ))}
       </div>
